@@ -1,0 +1,140 @@
+body {
+  background: #fffff8;
+  margin-left: 20px;  
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+header h3 {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.employee-search {
+  float: right;
+  padding: 15px;
+}
+
+.employee-search select,
+.employee-search input {
+  margin-right: 5px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;  
+  grid-gap: 20px;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.grid-item {
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  background: white;
+  display: grid;
+  grid-template-areas:
+    'menu main'
+    'menu main'
+    'menu main';
+  grid-gap: 0px;
+  height: 150px;
+  width: 385px;
+}
+
+.grid-item:hover {
+  -webkit-filter: brightness(90%);
+}
+
+.grid-item .menu {
+  /* border: 1px solid red;   */
+  grid-area: menu;
+  display: flex;
+  width: 150px;
+}
+
+img {
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.grid-item .main {
+  /* border: 1px solid red;   */
+  grid-area: main;
+  width: 255px;
+}
+
+.first-name,
+.last-name,
+.address,
+.city {
+  text-transform: capitalize;
+}
+
+.username,
+.email,
+.cell,
+.birthdate,
+.address,
+.city {
+  color: gray;
+}
+
+.address {
+  display: inline-block;
+}
+
+.dialog {
+  height: 100px;
+  white-space: nowrap;
+  background: white;
+  text-align: center;
+  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */  
+}
+
+.dialog-content {
+  padding: 20px;
+  display: inline-block;
+  width: 400px;
+}
+
+.dialog-basic {
+  border-bottom: 1px solid lightgray;
+  margin: auto;
+}
+
+.btn {
+  color: lightgray;
+  padding: 15px 3px;
+  font-size: 35px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  -webkit-filter: brightness(90%);
+}
+
+#left {
+  display: inline-block;
+}
+
+#right {
+  display: inline-block;
+}
