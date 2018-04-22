@@ -60,7 +60,6 @@ header h3 {
 }
 
 .grid-item .menu {
-  /* border: 1px solid red;   */
   grid-area: menu;
   display: flex;
   width: 150px;
@@ -74,7 +73,6 @@ img {
 }
 
 .grid-item .main {
-  /* border: 1px solid red;   */
   grid-area: main;
   width: 255px;
 }
